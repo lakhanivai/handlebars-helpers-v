@@ -1654,7 +1654,15 @@ Block helper that converts a JSON string to a Markdown table.
 
 ```handlebars
 <!-- JSON string -->
-{{#jsonToMarkdownTable '[{"Name":"Alice","Age":25,"City":"New York"},{"Name":"Bob","Age":30,"City":"San Francisco"}]'}}
+{{#jsonToMarkdownTable
+'[
+{"Name":"Alice",
+ "Age":25,
+ "City":"New York"},
+{"Name":"Bob",
+ "Age":30,
+ "City":"San Francisco"}]'
+}}
 {{/jsonToMarkdownTable}}
 
 <!-- results in:
