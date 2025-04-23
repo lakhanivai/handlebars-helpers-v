@@ -1641,6 +1641,28 @@ Read a markdown file from the file system and inject its contents after converti
 ```handlebars
 {{md "foo/bar.md"}}
 ```
+### [{{jsonToMarkdownTable}}](lib/markdown.js)
+
+Block helper that converts a JSON string to a Markdown table.
+
+**Params**
+
+- `context` **{String}**: A JSON string representing an array of objects.
+- `returns` **{String}**: Markdown table.
+
+**Example**
+
+```handlebars
+<!-- JSON string -->
+{{#jsonToMarkdownTable '[{"Name":"Alice","Age":25,"City":"New York"},{"Name":"Bob","Age":30,"City":"San Francisco"}]'}}
+{{/jsonToMarkdownTable}}
+
+<!-- results in:
+| Name  | Age | City          |
+| ----- | --- | ------------- |
+| Alice | 25  | New York      |
+| Bob   | 30  | San Francisco |
+-->
 
 ## match
 
