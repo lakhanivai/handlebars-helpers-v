@@ -1663,6 +1663,7 @@ Block helper that converts a JSON string to a Markdown table.
 | Alice | 25  | New York      |
 | Bob   | 30  | San Francisco |
 -->
+```
 
 ## match
 
